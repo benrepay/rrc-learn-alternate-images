@@ -1,0 +1,1 @@
+A simple Chrome extension that displays alternate images for Red River College's Learn index page.
