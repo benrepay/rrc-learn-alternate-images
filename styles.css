@@ -1,0 +1,147 @@
+body {
+	margin-left: 155px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+h1, h3 {
+	font-weight: normal;    
+	color: #303942;
+}
+
+h1 {
+	font-size: 1.1em;
+	padding: 6px 0px 10px;
+	width: 719px;
+	border-bottom: 1px solid #eeeeee;    
+}
+
+h3 {
+	font-size: 0.9em;
+	margin: 0;
+	padding-top: 1px;
+	padding-bottom: 2px;
+}
+
+p {
+	line-height: 1.8em;
+	margin: 8px 18px;
+	font-size: 75%;
+	width: 600px;
+}
+
+section {
+	margin-bottom: 16px;
+}
+
+button {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+	text-shadow: 0 1px 0 #f0f0f0;
+	padding: 4px 10px;
+	border-radius: 2px;
+	color: #444444;
+	font-size: inherit;
+}
+
+button:hover {
+	background-image: -webkit-linear-gradient(#f2f2f2, #f2f2f2 38%, #dedede);
+}
+
+button:active {
+	background-image: -webkit-linear-gradient(#dedede, #dedede 38%, #dedede);
+	box-shadow: 0 0 0;
+}
+
+
+input[type="text"] {
+	padding: 2px 2px 3px;
+}
+
+#chance {
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+
+#chance_label {
+	width: 42px;
+	text-align: center;
+	border: none;
+	background: none;
+}
+
+#url {
+	width: 280px;
+}
+
+#model {
+	display: none;
+}
+
+.saved {
+	position: absolute;
+	top: -2px;
+	right: -28px;
+	color: green;
+	font-size: 2em;
+	display: none;
+}
+
+.error {
+	position: absolute;
+	right: -204px;
+	top: -2px;
+	color: red;
+	font-size: 2em;
+	text-align: left;
+	display: none;
+	width: 200px;
+}
+
+.error span {
+	font-size: 0.6em;
+	vertical-align: middle;
+}
+
+.image {
+	position: relative;
+	float: left;
+	width: 240px;
+	padding: 4px;
+	margin: 12px;
+	overflow: auto;
+}
+
+.image button {
+	font-size: 0.75em;
+}
+
+.thumbnail {
+	position: relative;
+	float: left;
+	background-image: url('/images/bg_thumbnail.png');
+	height: 100px;
+	width: 58px;
+	overflow: hidden;
+}
+
+.thumbnail img {
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	-webkit-transform-origin: top left;
+	-webkit-transform: scale(0.19);
+}
+
+.controls {
+	position: absolute;
+	bottom: 8px;
+	left: 72px;
+}
+
+.x, .y {
+	vertical-align: top;
+}

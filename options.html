@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head><title>RRC Learn - Alternate Index Images</title></head>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="options.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body>
+
+<h1>RRC Learn - Alternate Image Options</h1>
+
+<section id="add_section">
+  <h3>Add Image</h3>
+  <p>
+    The submitted image URL will be saved and will load on the Learn index page when randomly selected. <br>
+    For best results try images less than 300 pixels wide and 520 pixels tall.
+  </p>
+  <p>
+    <input id="url" type="text" placeholder="Image URL">
+    <button id="add_button">Add<span class="saved">&#x2713;</span><span class="error">&#x2717;<span></span></span></button>
+  </p>
+</section>
+
+<section id="chance_section">
+  <h3>Chance to Appear</h3>
+  <p>
+    <input type="range" id="chance" min="0" step="5" max="100" value="100">
+    <input type="text" id="chance_label" value="100%" disabled>
+    <button id="save_chance">Save<span class="saved">&#x2713;</span></button>
+  </p>
+</section>
+
+<section id="images">
+  <h3>Images</h3>
+</section>
+
+<div id="model">
+  <div class="image">
+    <div class="thumbnail">
+      <img src="" alt="">
+    </div>
+    
+    <div class="controls">
+      <div class="x">
+        x <input type="range">
+      </div>
+      <div class="y">
+        y <input type="range">
+      </div>
+      <button class="remove">Remove</button>
+      <button class="save">Save<span class="saved">&#x2713;</span></button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

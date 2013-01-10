@@ -1,15 +1,20 @@
 {
   "name": "RRC Learn - Alternate Index Images",
-  "version": "1.0",
+  "version": "2.0",
   "manifest_version": 2,
   "description": "Replaces the default images of people on RCC's Learn index page with some new ones",
-  "content_scripts": [
-		{
-      "matches": ["https://learn.rrc.ca/", "https://learn.rrc.ca/index.asp"],
-      "js": ["images.js"],
-			"run_at": "document_end"
-    }
-  ],
-	"web_accessible_resources": [	"images/*" ]
-	
+  "content_scripts": [{
+    "matches": ["https://learn.rrc.ca/", "https://learn.rrc.ca/index.asp"],
+    "js": ["images.js"],
+    "run_at": "document_end"
+  }],
+  "icons": { "16": "images/icon16.png",
+             "48": "images/icon48.png",
+            "128": "images/icon128.png"},
+  "background": {
+    "scripts": ["setup.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [	"images/*" ],
+  "options_page": "options.html"
 }
