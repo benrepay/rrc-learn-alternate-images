@@ -1,3 +1,8 @@
+// Ben Repay
+// brepay@gmail.com
+// BIT 2012
+
+
 // Hide the existing image
 var img = document.getElementById('imgRotator').getElementsByTagName('img')[0];
 img.style.visibility = "hidden";

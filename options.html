@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
-<head><title>RRC Learn - Alternate Index Images</title></head>
+<head><title>RRC Alternate Learn Images</title></head>
+<meta tag="author" content="Ben Repay">
 <script src="jquery-1.8.3.min.js"></script>
 <script src="options.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 
-<h1>RRC Learn - Alternate Image Options</h1>
+<h1>RRC Alternate Learn Images</h1>
 
 <section id="add_section">
   <h3>Add Image</h3>
@@ -16,7 +17,7 @@
   </p>
   <p>
     <input id="url" type="text" placeholder="Image URL">
-    <button id="add_button">Add<span class="saved">&#x2713;</span><span class="error">&#x2717;<span></span></span></button>
+    <button id="add_button">Add<span class="saved"><img src="images/check.png" alt="Saved"></span><span class="error"><img src="images/x.png" alt="Error"><span></span></span></button>
   </p>
 </section>
 
@@ -25,7 +26,7 @@
   <p>
     <input type="range" id="chance" min="0" step="5" max="100" value="100">
     <input type="text" id="chance_label" value="100%" disabled>
-    <button id="save_chance">Save<span class="saved">&#x2713;</span></button>
+    <button id="save_chance">Save<span class="saved"><img src="images/check.png" alt="Saved"></span></button>
   </p>
 </section>
 
@@ -47,7 +48,7 @@
         y <input type="range">
       </div>
       <button class="remove">Remove</button>
-      <button class="save">Save<span class="saved">&#x2713;</span></button>
+      <button class="save">Save<span class="saved"><img src="images/check.png" alt="Saved"></span></button>
     </div>
   </div>
 </div>

@@ -1,6 +1,9 @@
+// Ben Repay
+// brepay@gmail.com
+// BIT 2012
+
 var MAX_WIDTH = 300;
 var MAX_HEIGHT = 520;
-
 
 $(document).ready(function() {
   restoreOptions();
@@ -70,8 +73,8 @@ function generateImage(imageName) {
   if (imageData[1] >= MAX_HEIGHT) { $(yRange).attr("disabled",""); }
   
   // Handle control events
-  $($mainDiv.find(".save")).click(function() { saveClicked(imageName, $mainDiv); });
-  $($mainDiv.find(".remove")).click(function() { removeClicked(imageName, $mainDiv); });
+  $mainDiv.find(".save").click(function() { saveClicked(imageName, $mainDiv); });
+  $mainDiv.find(".remove").click(function() { removeClicked(imageName, $mainDiv); });
   $(xRange).change(function(e) { rangeChanged(e, "x", img); });
   $(yRange).change(function(e) { rangeChanged(e, "y", img); });
 
@@ -94,7 +97,7 @@ function saveClicked(imageName, $mainDiv) {
 
 // Removes the image from localStorage and screen
 function removeClicked(imageName, $mainDiv) {
-  $($mainDiv).fadeOut();
+  $mainDiv.fadeOut();
  
   var images = JSON.parse(localStorage["images"]);
   delete images[imageName];
